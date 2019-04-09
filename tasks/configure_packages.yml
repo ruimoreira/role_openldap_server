@@ -5,7 +5,7 @@
     src: templates/DB_CONFIG.j2
     dest: "{{ ldap_directory_location }}/DB_CONFIG"
     owner: "{{ ldap_service_user }}"
-    group: "{{ ldap_service_user}}"
+    group: "{{ ldap_service_user }}"
   become: true
 
 - name: ensure hostname is in hosts
@@ -117,7 +117,7 @@
       o: Awesome domain
     state: present
     server_uri: ldap:///
-    bind_dn: "cn={{ldap_admin_user}},{{ ldap_domain }}"
+    bind_dn: "cn={{ ldap_admin_user }},{{ ldap_domain }}"
     bind_pw: "{{ vault_root_password }}"
   become: true
 
@@ -127,7 +127,7 @@
     objectClass: organizationalUnit
     state: present
     server_uri: ldap:///
-    bind_dn: "cn={{ldap_admin_user}},{{ ldap_domain }}"
+    bind_dn: "cn={{ ldap_admin_user }},{{ ldap_domain }}"
     bind_pw: "{{ vault_root_password }}"
   become: true
 
@@ -137,7 +137,7 @@
     objectClass: organizationalUnit
     state: present
     server_uri: ldap:///
-    bind_dn: "cn={{ldap_admin_user}},{{ ldap_domain }}"
+    bind_dn: "cn={{ ldap_admin_user }},{{ ldap_domain }}"
     bind_pw: "{{ vault_root_password }}"
   become: true
 
@@ -147,7 +147,7 @@
     objectClass: organizationalUnit
     state: present
     server_uri: ldap:///
-    bind_dn: "cn={{ldap_admin_user}},{{ ldap_domain }}"
+    bind_dn: "cn={{ ldap_admin_user }},{{ ldap_domain }}"
     bind_pw: "{{ vault_root_password }}"
   become: true
 
@@ -159,7 +159,7 @@
       - posixGroup
     state: present
     server_uri: ldap:///
-    bind_dn: "cn={{ldap_admin_user}},{{ ldap_domain }}"
+    bind_dn: "cn={{ ldap_admin_user }},{{ ldap_domain }}"
     bind_pw: "{{ vault_root_password }}"
     attributes:
       gidNumber: 501
