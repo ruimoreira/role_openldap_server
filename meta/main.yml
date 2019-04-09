@@ -14,7 +14,7 @@ galaxy_info:
   # - GPLv3
   # - Apache
   # - CC-BY
-  license: license (GPLv2, CC-BY, etc)
+  license: BSD
 
   min_ansible_version: 1.2
 
@@ -46,7 +46,7 @@ galaxy_info:
 
   galaxy_tags:
     - openldap
-    - ldap server
+    - ldap
     - authentication
 
   # List tags for your role here, one per line. A tag is a keyword that describes
