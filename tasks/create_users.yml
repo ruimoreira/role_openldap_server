@@ -23,6 +23,6 @@
       description: test1 user
     state: present
     server_uri: ldap:///
-    bind_dn: "cn={{ldap_admin_user}},{{ ldap_domain }}"
+    bind_dn: "cn={{ ldap_admin_user }},{{ ldap_domain }}"
     bind_pw: "{{ vault_root_password }}"
   become: true
