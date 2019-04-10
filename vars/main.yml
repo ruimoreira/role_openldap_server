@@ -1,3 +1,3 @@
 ---
 # vars file for openldap-server
-packagelist: ['openldap-servers', 'openldap-clients', 'python-ldap', 'pyOpenSSL', 'openssh-ldap']
+packagelist: ['firewalld', 'openldap-servers', 'openldap-clients', 'python-ldap', 'pyOpenSSL', 'openssh-ldap']
