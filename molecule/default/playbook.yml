@@ -13,4 +13,4 @@
 
   roles:
     - role: openldap-server
-    - role: openldap-client
+    # - role: openldap-client
