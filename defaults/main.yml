@@ -3,3 +3,8 @@
 ldap_directory_location: /var/lib/ldap
 ldap_service_user: ldap
 use_ldap_tls: true
+ldap_admin_user: admin
+ldap_users_ou: ou=Users
+ldap_groups_ou: ou=Groups
+ldap_contacts_ou: ou=Contacts
+ldap_bind_dn: cn={{ ldap_admin_user }},{{ ldap_domain }}
