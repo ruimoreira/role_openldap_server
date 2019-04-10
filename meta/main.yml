@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: Rui Moreira
-  company: your company (optional)
+  company: None
   description: Role for openldap server
 
   # If the issue tracker for your role is not on github, uncomment the
